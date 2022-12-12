@@ -488,7 +488,7 @@ P1：
 
 P2:
 
-![](images\HistogramEqualization\P2\Raw.jpg)
+![Raw](./images/HistogramEqualization/P2/Raw.jpg)
 
 #### 1.2直方图均衡化
 
