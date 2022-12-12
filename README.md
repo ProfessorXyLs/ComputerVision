@@ -500,7 +500,7 @@ P1:
 
 P2:
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\P2\HistogramEqualization.png)
+![](images\HistogramEqualization\P2\HistogramEqualization.png)
 
 #### 1.3限制对比度自适应直方图均衡化
 
@@ -508,17 +508,17 @@ P2:
 
 P1：
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\P1\Clahe.png)
+![](images\HistogramEqualization\P1\Clahe.png)
 
 P2：
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\P2\Clahe.png)
+![](images\HistogramEqualization\P2\Clahe.png)
 
 #### 1.4直方图对比
 
 P1：
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\P1\Histogram.png)
+![](HistogramEqualization\P1\Histogram.png)
 
 P2：
 
@@ -536,7 +536,7 @@ P1类似于X光机检测出来的图片，P2是年代久远的老照片，都无
 
 #### 1.1原图
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\Raw.bmp)
+![](images\SpatialDomain\Raw.bmp)
 
 为了能直观的观察到空间域滤波的效果，我们在原图本身分别添加两种噪声：盐噪声、椒噪声
 
@@ -561,15 +561,15 @@ def addsalt_pepper(img, SNR):
 
 **盐噪声图片：**
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\SaltNoise.png)
+![](images\SpatialDomain\SaltNoise.png)
 
 **椒噪声图片：**
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\PepperNoise.png)
+![](images\SpatialDomain\PepperNoise.png)
 
 **椒盐噪声图片：**
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\SaltandPepperNoise.png)
+![](images\SpatialDomain\SaltandPepperNoise.png)
 
 #### 1.3平滑空间域滤波器
 
@@ -577,21 +577,21 @@ def addsalt_pepper(img, SNR):
 
 对于**盐噪声图片**：
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\removeSaltNoise.png)
+![](images\SpatialDomain\removeSaltNoise.png)
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\SpatialDomain\SaltNoise.png)
+![](images\HistogramEqualization\SpatialDomain\SaltNoise.png)
 
 对于椒噪声图片：
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\removePepperNoise.png)
+![](images\SpatialDomain\removePepperNoise.png)
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\SpatialDomain\PepperNoise.png)
+![](images\HistogramEqualization\SpatialDomain\PepperNoise.png)
 
 对于椒盐噪声图片：
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\removeSaltandPepperNoise.png)
+![](images\SpatialDomain\removeSaltandPepperNoise.png)
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\SpatialDomain\SaltandPepperNoise.png)
+![](images\HistogramEqualization\SpatialDomain\SaltandPepperNoise.png)
 
 **均值滤波**又称作邻域平均法，是典型的**线性滤波算法**，理想的均值滤波是用每个像素和它周围像素计算出来的平均值替换图像中每个像素。从频率域观点来看均值滤波是一种低通滤波器（让图像的低频部分通过，通常弱化边缘，会得到比较平缓的图像），高频信号将会去掉，因此可以**帮助消除图像尖锐噪声**，实现图像平滑，模糊等功能。因为此方法不能很好地保护图像细节，**在图像去噪的同时也破坏了图像的细节部分**，从而使图像变得模糊。
 
@@ -616,9 +616,9 @@ $$
 
 #### 1.4锐化空间滤波器
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\SpatialDomain\Laplacian.png)
+![](images\SpatialDomain\Laplacian.png)
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\SpatialDomain\Laplacian.png)
+![](images\HistogramEqualization\SpatialDomain\Laplacian.png)
 
 前面的几种滤波器都属于平滑滤波器（低通滤波器），用来平滑图像和抑制噪声的；而锐化空间滤波器恰恰相反，主要用来**增强图像的突变信息**，**图像的细节和边缘信息**。平滑滤波器主要是使用邻域的均值（或者中值）来代替模板中心的像素，消弱和邻域间的差别，以达到平滑图像和抑制噪声的目的；相反，锐化滤波器则使用邻域的微分作为算子，增大邻域间像素的差值，使图像的突变部分变的更加明显。简单来说，平滑滤波器适合处理图片噪声，而锐化滤波器适合用来图像增强。
 
@@ -626,41 +626,41 @@ $$
 
 ##### 1.1原图
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\FrequencyDomain\Raw.bmp)
+![](images\FrequencyDomain\Raw.bmp)
 
 ##### 1.2低通滤波器
 
 ###### 理想低通滤波器
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\FrequencyDomain\ILP.png)
+![](images\FrequencyDomain\ILP.png)
 
 ###### 布特沃斯低通滤波器
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\FrequencyDomain\BWLP.png)
+![](images\FrequencyDomain\BWLP.png)
 
 ###### 高斯低通滤波器
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\FrequencyDomain\GLP.png)
+![](images\FrequencyDomain\GLP.png)
 
 ##### 1.3高通滤波器
 
 ###### 理想高通滤波器
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\FrequencyDomain\IHP.png)
+![](images\FrequencyDomain\IHP.png)
 
 ###### 布特沃斯高通滤波器
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\FrequencyDomain\BWHP.png)
+![](images\FrequencyDomain\BWHP.png)
 
 ###### 高斯高通滤波器
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\FrequencyDomain\GHP.png)
+![](images\FrequencyDomain\GHP.png)
 
 ##### 1.4综合对比
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\FrequencyDomain\low.png.png)
+![](images\HistogramEqualization\FrequencyDomain\low.png.png)
 
-![](C:\Users\LS\pythonProject\ComputerVision\images\HistogramEqualization\FrequencyDomain\high.png.png)
+![](images\HistogramEqualization\FrequencyDomain\high.png.png)
 
 我们知道，在一幅图像中，其低频成分对应者图像变化缓慢的部分，对应着图像大致的相貌和轮廓。而其高频成分则对应着图像变化剧烈的部分，对应着图像的细节（图像的噪声也属于高频成分）。
 
