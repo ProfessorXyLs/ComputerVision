@@ -496,7 +496,7 @@ P2:
 
 P1:
 
-![HistogramEqualization_P1](./images\HistogramEqualization\P1\HistogramEqualization.png)
+![!(](images/HistogramEqualization/P1/HistogramEqualization.png)
 
 P2:
 
